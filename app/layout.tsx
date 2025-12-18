@@ -1,15 +1,15 @@
 import React from "react";
 
-export default function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const metadata = {
+  title: "Dj Events",
+  description: "Welcome to Dj Events",
+  keywords: ["dj", "events", "music"],
+};
+
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        <main>{children}</main>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

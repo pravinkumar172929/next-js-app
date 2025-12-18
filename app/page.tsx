@@ -1,9 +1,5 @@
 import Link from "next/link";
-
-export const metadata = {
-  title: "Dj Events",
-  description: "Welcome to Dj Events",
-};
+import Layout from "./layout";
 
 export default function Page() {
   return (
