@@ -11,10 +11,12 @@ export const metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Header />
-      <Footer />
       <html lang="en">
-        <body>{children}</body>
+        <body>
+          <Header />
+          {children}
+          <Footer />
+        </body>
       </html>
     </>
   );
