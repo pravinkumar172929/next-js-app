@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./header/page";
 import Footer from "./footer/page";
 import Showcase from "./showcase/page";
+import styles from "./layout.module.css";
 
 export const metadata = {
   title: "Dj Events",
@@ -15,7 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <html lang="en">
         <body>
           <Header />
-          {children}
+          <div className={styles.contailer}>{children}</div>
           <Showcase />
           <Footer />
         </body>
