@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./header/page";
 
 export const metadata = {
   title: "Dj Events",
@@ -8,8 +9,11 @@ export const metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <>
+      <Header />
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </>
   );
 }

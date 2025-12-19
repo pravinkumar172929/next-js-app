@@ -3,7 +3,7 @@ export const metadata = {
   title: "About",
   description: "About Dj Events",
 };
-const page = () => {
+const About = () => {
   return (
     <>
       <h1>About</h1>
@@ -12,4 +12,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default About;
